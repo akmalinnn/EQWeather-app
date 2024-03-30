@@ -17,7 +17,8 @@ return new class extends Migration
             $table->decimal('average_temperature', 3, 1);
             $table->decimal('maximum_temperature', 3, 1);
             $table->decimal('minimum_temperature', 3, 1);
-            $table->decimal('detail_forecast', 3, 1);
+            $table->string('detail_forecast', 3, 1);
+            $table->string('detail_icon', 3, 1);
             $table->date('date');
             $table->timestamps();
 

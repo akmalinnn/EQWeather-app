@@ -25,7 +25,13 @@ const ForecastTable = (props) => {
                                 <td>{dayForecast.average_temperature}</td>
                                 <td>{dayForecast.minimum_temperature}</td>
                                 <td>{dayForecast.maximum_temperature}</td>
-                                <td>{dayForecast.detail_forecast}</td>
+                                <td className="flex items-center">
+                                <img
+                                    src={`https://cdn.weatherbit.io/static/img/icons/${dayForecast.detail_icon}.png`}
+                                    className="mr-2"
+                                        />
+                                    {dayForecast.detail_forecast}
+                                </td>
                             </tr>
                         );
                     })}

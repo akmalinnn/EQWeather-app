@@ -21,7 +21,9 @@ class DayForecast extends Model
         'minimum_temperature',
         'average_temperature',
         'report_id',
-        'detail_forecast'
+        'detail_forecast',
+        'detail_icon'
+
     ];
 
     /**

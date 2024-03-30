@@ -35,7 +35,8 @@
                         'maximum_temperature' => $dayForecast['high_temp'],
                         'minimum_temperature' => $dayForecast['low_temp'],
                         'average_temperature' => $dayForecast['temp'],
-                        'detail_forecast' => $dayForecast['weather']['description']
+                        'detail_forecast' => $dayForecast['weather']['description'],
+                        'detail_icon' => $dayForecast['weather']['icon']
                     ]);
                 }
 
